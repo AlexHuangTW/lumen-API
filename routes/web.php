@@ -19,6 +19,12 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+
+$router->get('/test', function () {
+    return response()->json(['message' => 'API is working']);
+});
+
+
 // $router->get('/projects', 'BookController@getAll');
 $router->get('/books/{id}', 'BookController@getOne');
 $router->post('/books/add', 'BookController@save');
