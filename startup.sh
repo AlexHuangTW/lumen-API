@@ -1,3 +1,3 @@
 #!/bin/bash
 service nginx start
-service php8.3-fpm start
+service php8.2-fpm start
